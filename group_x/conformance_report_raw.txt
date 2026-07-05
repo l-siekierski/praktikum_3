@@ -1,0 +1,63 @@
+=== CONFORMANCE CHECKING RESULTS COMPARISON ===
+
+Event Log: eventlog_group_x.xes
+Total Events: 17676
+Total Cases (Traces): 1100
+
+ALPHA MINER MODEL:
+  Places: 2, Transitions: 13, Arcs: 15
+  TBR Log Fitness: 0.258222
+  TBR Trace Fitness %: 0.00%
+  TBR Fit Traces: 0/1100
+  TBR Consumed: 5510, Produced: 18776
+  TBR Missing: 3310, Remaining: 16576
+  Footprint Fitness: 0.843104
+  Footprint Precision: 0.335664
+  Footprint Total Violations: 7
+
+HEURISTICS MINER MODEL:
+  Places: 28, Transitions: 55, Arcs: 110
+  TBR Log Fitness: 0.998400
+  TBR Trace Fitness %: 94.55%
+  TBR Fit Traces: 1040/1100
+  TBR Consumed: 37492, Produced: 37492
+  TBR Missing: 60, Remaining: 60
+  Footprint Fitness: 0.995781
+  Footprint Precision: 1.000000
+  Footprint Total Violations: 28
+
+=== FOOTPRINT VIOLATIONS DETAIL (ALPHA MINER) ===
+  1. Relation mismatch: ('Validate Order & Check Stock', 'Place Order')
+  2. Relation mismatch: ('Receive Tracking Information', 'Place Order')
+  3. Relation mismatch: ('Browse & Select Products', 'Place Order')
+  4. Relation mismatch: ('Place Order', 'Browse & Select Products')
+  5. Relation mismatch: ('Receive Tracking Information', 'Browse & Select Products')
+  6. Relation mismatch: ('Browse & Select Products', 'Browse & Select Products')
+  7. Relation mismatch: ('Place Order', 'Place Order')
+
+=== FOOTPRINT VIOLATIONS DETAIL (HEURISTICS MINER) ===
+  1. Relation mismatch: ('Browse & Select Products', 'Validate Order & Check Stock')
+  2. Relation mismatch: ('Validate Order & Check Stock', 'Place Order')
+  3. Relation mismatch: ('Receive Confirmation', 'Pick & Pack Items')
+  4. Relation mismatch: ('Receive Confirmation', 'Validate Order & Check Stock')
+  5. Relation mismatch: ('Process Payment', 'Ship Order')
+  6. Relation mismatch: ('Ship Order', 'Receive Tracking Information')
+  7. Relation mismatch: ('Process Payment', 'Express Ship Order')
+  8. Relation mismatch: ('Receive Tracking Information', 'Send Tracking Information')
+  9. Relation mismatch: ('Pick & Pack Items', 'Send Tracking Information')
+  10. Relation mismatch: ('Validate Order & Check Stock', 'Process Payment')
+  11. Relation mismatch: ('Send Tracking Information', 'Ship Order')
+  12. Relation mismatch: ('Receive Tracking Information', 'Browse & Select Products')
+  13. Relation mismatch: ('Receive Tracking Information', 'Receive Confirmation')
+  14. Relation mismatch: ('Approve Bulk Order', 'Validate Order & Check Stock')
+  15. Relation mismatch: ('Approve Bulk Order', 'Process Payment')
+  16. Relation mismatch: ('Place Order', 'Approve Bulk Order')
+  17. Relation mismatch: ('Receive Tracking Information', 'Ship Order')
+  18. Relation mismatch: ('Express Ship Order', 'Receive Tracking Information')
+  19. Relation mismatch: ('Receive Tracking Information', 'Express Ship Order')
+  20. Relation mismatch: ('Receive Tracking Information', 'Process Payment')
+  21. Relation mismatch: ('Receive Tracking Information', 'Place Order')
+  22. Relation mismatch: ('Place Order', 'Browse & Select Products')
+  23. Relation mismatch: ('Process Payment', 'Receive Confirmation')
+  24. Relation mismatch: ('Receive Tracking Information', 'Pick & Pack Items')
+  25. Relation mismatch: ('Place Order', 'Receive Confirmation')

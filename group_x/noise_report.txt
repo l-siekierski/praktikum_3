@@ -1,0 +1,202 @@
+=== NOISE ANALYSIS: eventlog_group_x.xes ===
+
+Total cases: 1100, distinct variants: 49
+Main variants (>10 cases): 9 covering 1036 cases (94.18%)
+Noise variants (<=10 cases): 40 covering 64 cases (5.82%)
+
+--- Noise type breakdown ---
+  duplicate_event: 30 cases
+  missing_event: 18 cases
+  swapped_events: 16 cases
+
+--- Noisy variants in detail ---
+[duplicate_event] count=4
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information -> Validate Order & Check Stock
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[duplicate_event] count=3
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information -> Receive Confirmation
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[duplicate_event] count=3
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[missing_event] count=3
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[missing_event] count=3
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[duplicate_event] count=3
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information -> Browse & Select Products
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[duplicate_event] count=3
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information -> Place Order
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[duplicate_event] count=3
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information -> Ship Order
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[missing_event] count=2
+  variant: Browse & Select Products -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[swapped_events] count=2
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Process Payment -> Receive Confirmation -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[duplicate_event] count=2
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information -> Pick & Pack Items
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[swapped_events] count=2
+  variant: Place Order -> Browse & Select Products -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[swapped_events] count=2
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Ship Order -> Pick & Pack Items -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[missing_event] count=2
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[missing_event] count=2
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[duplicate_event] count=1
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information -> Receive Confirmation
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[missing_event] count=1
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[swapped_events] count=1
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Send Tracking Information -> Ship Order -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[missing_event] count=1
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Express Ship Order -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[swapped_events] count=1
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Approve Bulk Order -> Process Payment -> Receive Confirmation -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Approve Bulk Order -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[missing_event] count=1
+  variant: Browse & Select Products -> Place Order -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[swapped_events] count=1
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Pick & Pack Items -> Process Payment -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[swapped_events] count=1
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Approve Bulk Order -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[swapped_events] count=1
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Pick & Pack Items -> Process Payment -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[swapped_events] count=1
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Approve Bulk Order -> Receive Confirmation -> Process Payment -> Ship Order -> Pick & Pack Items -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Approve Bulk Order -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[duplicate_event] count=1
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information -> Process Payment
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[swapped_events] count=1
+  variant: Place Order -> Browse & Select Products -> Validate Order & Check Stock -> Approve Bulk Order -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Approve Bulk Order -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[swapped_events] count=1
+  variant: Browse & Select Products -> Validate Order & Check Stock -> Place Order -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[duplicate_event] count=1
+  variant: Browse & Select Products -> Place Order -> Approve Bulk Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[swapped_events] count=1
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Approve Bulk Order -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Send Tracking Information -> Ship Order -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Approve Bulk Order -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[missing_event] count=1
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Approve Bulk Order -> Receive Confirmation -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Approve Bulk Order -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[duplicate_event] count=1
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[duplicate_event] count=1
+  variant: Browse & Select Products -> Place Order -> Approve Bulk Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[swapped_events] count=1
+  variant: Browse & Select Products -> Place Order -> Receive Confirmation -> Validate Order & Check Stock -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[duplicate_event] count=1
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Approve Bulk Order -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information -> Send Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Approve Bulk Order -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[duplicate_event] count=1
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information -> Express Ship Order
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[missing_event] count=1
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[missing_event] count=1
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Pick & Pack Items -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[duplicate_event] count=1
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information -> Send Tracking Information
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+[duplicate_event] count=1
+  variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Approve Bulk Order -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information -> Browse & Select Products
+  nearest main variant: Browse & Select Products -> Place Order -> Validate Order & Check Stock -> Approve Bulk Order -> Receive Confirmation -> Process Payment -> Pick & Pack Items -> Express Ship Order -> Send Tracking Information -> Receive Tracking Information
+
+--- Directly-follows relations occurring ONLY in noisy traces ---
+  Receive Confirmation -> Pick & Pack Items  (9 cases)
+  Process Payment -> Ship Order  (7 cases)
+  Browse & Select Products -> Validate Order & Check Stock  (6 cases)
+  Pick & Pack Items -> Send Tracking Information  (6 cases)
+  Validate Order & Check Stock -> Process Payment  (6 cases)
+  Receive Tracking Information -> Receive Confirmation  (4 cases)
+  Ship Order -> Receive Tracking Information  (4 cases)
+  Receive Tracking Information -> Validate Order & Check Stock  (4 cases)
+  Receive Tracking Information -> Receive Tracking Information  (4 cases)
+  Receive Tracking Information -> Browse & Select Products  (4 cases)
+  Process Payment -> Receive Confirmation  (3 cases)
+  Place Order -> Receive Confirmation  (3 cases)
+  Ship Order -> Pick & Pack Items  (3 cases)
+  Place Order -> Browse & Select Products  (3 cases)
+  Receive Tracking Information -> Place Order  (3 cases)
+  Receive Tracking Information -> Ship Order  (3 cases)
+  Send Tracking Information -> Ship Order  (2 cases)
+  Approve Bulk Order -> Process Payment  (2 cases)
+  Process Payment -> Express Ship Order  (2 cases)
+  Pick & Pack Items -> Process Payment  (2 cases)
+  Place Order -> Approve Bulk Order  (2 cases)
+  Approve Bulk Order -> Validate Order & Check Stock  (2 cases)
+  Receive Tracking Information -> Pick & Pack Items  (2 cases)
+  Receive Tracking Information -> Send Tracking Information  (2 cases)
+  Express Ship Order -> Receive Tracking Information  (1 cases)
+  Receive Tracking Information -> Process Payment  (1 cases)
+  Validate Order & Check Stock -> Place Order  (1 cases)
+  Receive Confirmation -> Validate Order & Check Stock  (1 cases)
+  Receive Tracking Information -> Express Ship Order  (1 cases)

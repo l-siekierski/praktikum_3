@@ -1,0 +1,40 @@
+=== NOISE IDENTIFIED BY THE HEURISTICS MINER ALGORITHM ITSELF ===
+
+Event Log: eventlog_group_x.xes
+Raw directly-follows edges: 55
+Edges kept in the Heuristics Net: 27
+Edges classified as noise (dfg_pre_cleaning_noise_thresh=0.05): 28
+
+--- Discarded edges (sorted by log frequency) ---
+  Receive Confirmation -> Pick & Pack Items   freq=9
+  Process Payment -> Ship Order   freq=7
+  Pick & Pack Items -> Send Tracking Information   freq=6
+  Browse & Select Products -> Validate Order & Check Stock   freq=6
+  Validate Order & Check Stock -> Process Payment   freq=6
+  Receive Tracking Information -> Validate Order & Check Stock   freq=4
+  Receive Tracking Information -> Browse & Select Products   freq=4
+  Ship Order -> Receive Tracking Information   freq=4
+  Receive Tracking Information -> Receive Confirmation   freq=4
+  Place Order -> Browse & Select Products   freq=3
+  Ship Order -> Pick & Pack Items   freq=3
+  Process Payment -> Receive Confirmation   freq=3
+  Receive Tracking Information -> Ship Order   freq=3
+  Place Order -> Receive Confirmation   freq=3
+  Receive Tracking Information -> Place Order   freq=3
+  Pick & Pack Items -> Process Payment   freq=2
+  Approve Bulk Order -> Process Payment   freq=2
+  Process Payment -> Express Ship Order   freq=2
+  Send Tracking Information -> Ship Order   freq=2
+  Approve Bulk Order -> Validate Order & Check Stock   freq=2
+  Receive Tracking Information -> Pick & Pack Items   freq=2
+  Place Order -> Approve Bulk Order   freq=2
+  Receive Tracking Information -> Send Tracking Information   freq=2
+  Receive Confirmation -> Validate Order & Check Stock   freq=1
+  Validate Order & Check Stock -> Place Order   freq=1
+  Express Ship Order -> Receive Tracking Information   freq=1
+  Receive Tracking Information -> Process Payment   freq=1
+  Receive Tracking Information -> Express Ship Order   freq=1
+
+Edges additionally failing dependency_thresh=0.5: 0
+
+Total edges treated as noise by the Heuristics Miner: 28

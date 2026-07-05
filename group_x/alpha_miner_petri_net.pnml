@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="alpha_classic_net_1783256516.897614" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>alpha_classic_net_1783256516.897614</text>
+    </name>
+    <page id="n0">
+      <place id="start">
+        <name>
+          <text>start</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="end">
+        <name>
+          <text>end</text>
+        </name>
+      </place>
+      <transition id="Validate_Order_Check_Stock_1">
+        <name>
+          <text>Validate Order &amp; Check Stock</text>
+        </name>
+      </transition>
+      <transition id="Receive_Confirmation_1">
+        <name>
+          <text>Receive Confirmation</text>
+        </name>
+      </transition>
+      <transition id="Approve_Bulk_Order_1">
+        <name>
+          <text>Approve Bulk Order</text>
+        </name>
+      </transition>
+      <transition id="Browse_Select_Products_1">
+        <name>
+          <text>Browse &amp; Select Products</text>
+        </name>
+      </transition>
+      <transition id="Place_Order_1">
+        <name>
+          <text>Place Order</text>
+        </name>
+      </transition>
+      <transition id="Notify_Out_of_Stock_1">
+        <name>
+          <text>Notify Out of Stock</text>
+        </name>
+      </transition>
+      <transition id="Pick_Pack_Items_1">
+        <name>
+          <text>Pick &amp; Pack Items</text>
+        </name>
+      </transition>
+      <transition id="Handle_Payment_Failure_1">
+        <name>
+          <text>Handle Payment Failure</text>
+        </name>
+      </transition>
+      <transition id="Ship_Order_1">
+        <name>
+          <text>Ship Order</text>
+        </name>
+      </transition>
+      <transition id="Receive_Tracking_Information_1">
+        <name>
+          <text>Receive Tracking Information</text>
+        </name>
+      </transition>
+      <transition id="Express_Ship_Order_1">
+        <name>
+          <text>Express Ship Order</text>
+        </name>
+      </transition>
+      <transition id="Send_Tracking_Information_1">
+        <name>
+          <text>Send Tracking Information</text>
+        </name>
+      </transition>
+      <transition id="Process_Payment_1">
+        <name>
+          <text>Process Payment</text>
+        </name>
+      </transition>
+      <arc id="4518913664" source="Notify_Out_of_Stock_1" target="end"/>
+      <arc id="4518910208" source="Process_Payment_1" target="end"/>
+      <arc id="4518914432" source="Browse_Select_Products_1" target="end"/>
+      <arc id="4518914624" source="Pick_Pack_Items_1" target="end"/>
+      <arc id="4518915488" source="Express_Ship_Order_1" target="end"/>
+      <arc id="4518916016" source="start" target="Browse_Select_Products_1"/>
+      <arc id="4518909968" source="Approve_Bulk_Order_1" target="end"/>
+      <arc id="4518916400" source="start" target="Place_Order_1"/>
+      <arc id="4518916688" source="Receive_Tracking_Information_1" target="end"/>
+      <arc id="4518915632" source="Place_Order_1" target="end"/>
+      <arc id="4518910928" source="Receive_Confirmation_1" target="end"/>
+      <arc id="4518913136" source="Validate_Order_Check_Stock_1" target="end"/>
+      <arc id="4518913424" source="Handle_Payment_Failure_1" target="end"/>
+      <arc id="4518914576" source="Ship_Order_1" target="end"/>
+      <arc id="4518913328" source="Send_Tracking_Information_1" target="end"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="end">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>
