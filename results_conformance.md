@@ -1,48 +1,48 @@
-# Conformance Checking Walkthrough & Analysis
+# Konformitätsprüfung: Analyse und Ergebnisse
 
-We have completed the comparative conformance analysis of the **Alpha Miner** and **Heuristics Miner** Petri net models against the full `n8n_sim_process_log.xes` event log. 
+Das vergleichende Conformance Checking der Petri-Netz-Modelle des **Alpha Miners** und des **Heuristics Miners** gegen das vollständige Event-Log `n8n_sim_process_log.xes` wurde abgeschlossen. 
 
-The analysis was performed using two main conformance checking techniques:
-1. **Token-based Replay (TBR):** Replaying cases event-by-event on the Petri net to compute token fitness and trace fitness.
-2. **Footprint-based Conformance:** Analyzing causal relationships, start/end activities, and parallelisms at a global level using log and model footprints.
+Die Durchführung der Analyse erfolgte unter Verwendung zweier etablierter Verfahren der Konformitätsprüfung:
+1. **Token-based Replay:** Das ereignisweise Abspielen der Prozessinstanzen (Traces) auf dem Petri-Netz zur Ermittlung der Token-Fitness und Trace-Fitness.
+2. **Footprint-basierte Konformitätsprüfung:** Die Analyse kausaler Beziehungen, Start- und Endaktivitäten sowie Parallelitäten auf globaler Ebene durch den Vergleich von Log- und Modell-Footprints.
 
 ---
 
-## Conformance Metrics Comparison
+## Vergleich der Konformitätsmetriken
 
-Below is the structured comparison of the conformance metrics for both discovered Petri Nets:
+Die folgende Tabelle zeigt den strukturierten Vergleich der Konformitätsmetriken für beide entdeckten Petri-Netze:
 
-| Conformance Metric | Alpha Miner Net | Heuristics Miner Net | Interpretation & Insight |
+| Konformitätsmetrik | Alpha-Miner-Netz | Heuristics-Miner-Netz | Interpretation & Erkenntnisse |
 | :--- | :---: | :---: | :--- |
-| **Model Size (Places / Transitions / Arcs)** | 2 / 34 / 7 | 74 / 121 / 259 | Alpha Miner discovered an extremely under-structured model. Heuristics Miner captured a detailed, complex model. |
-| **TBR Log Fitness** | **0.0082** | **0.9889** | **Heuristics Miner Net** explains almost all event sequences perfectly, whereas Alpha Miner has near-zero replay fitness. |
-| **TBR Trace Fitness %** | 0.00% | 30.00% | 3 out of the 10 long-running simulation traces replay perfectly on Heuristics Miner Net; 0 on Alpha Miner Net. |
-| **TBR Consumed / Produced Tokens** | 2,414 / 2,444 | 36,732 / 37,022 | The event log is extremely large (18,198 events). Heuristics Miner Net routes tens of thousands of tokens correctly. |
-| **TBR Missing / Remaining Tokens (Errors)**| 2,394 / 2,424 | 266 / 556 | Alpha Miner Net suffers from massive token replay failures. Heuristics Miner Net has minimal errors. |
-| **Footprint-based Fitness** | 0.8813 | 0.9549 | Both models score high, but for different reasons (see details below). |
-| **Footprint-based Precision** | **0.1709** | **0.8816** | **Alpha Miner Net** has extremely low precision (over-generalization), while **Heuristics Miner Net** is highly precise. |
-| **Footprint Total Violations** | 5 | 132 | Alpha Miner Net violates only 5 relationships because it allows almost anything. Heuristics Miner Net has 132 minor mismatches on low-frequency paths. |
+| **Modellgröße (Stellen / Transitionen / Kanten)** | 2 / 34 / 7 | 74 / 121 / 259 | Der Alpha Miner lieferte ein extrem unterstrukturiertes Modell. Der Heuristics Miner erzeugte ein detailliertes, komplexes Modell. |
+| **TBR Log Fitness (Fitnesswert)** | **0,0082** | **0,9889** | Das **Heuristics-Miner-Netz** erklärt nahezu alle Ereignissequenzen fehlerfrei, während das Alpha-Miner-Netz eine Replay-Fitness nahe Null aufweist. |
+| **TBR Trace Fitness %** | 0,00% | 30,00% | 3 der 10 langlaufenden Simulations-Traces lassen sich fehlerfrei auf dem Heuristics-Miner-Netz abspielen; beim Alpha-Miner-Netz kein einziger. |
+| **TBR Konsumierte / Produzierte Token** | 2.414 / 2.444 | 36.732 / 37.022 | Das Event-Log ist mit 18.198 Ereignissen sehr groß. Das Heuristics-Miner-Netz leitet zehntausende Token fehlerfrei durch. |
+| **TBR Fehlende / Verbleibende Token (Fehler)**| 2.394 / 2.424 | 266 / 556 | Das Alpha-Miner-Netz weist massive Fehler beim Token-Replay auf. Das Heuristics-Miner-Netz zeigt nur minimale Fehler. |
+| **Footprint-basierte Fitness** | 0,8813 | 0,9549 | Beide Modelle erzielen hohe Werte, jedoch aus völlig unterschiedlichen Gründen (Details siehe unten). |
+| **Footprint-basierte Präzision** | **0,1709** | **0,8816** | Das **Alpha-Miner-Netz** hat eine extrem niedrige Präzision (Übergeneralisierung), während das **Heuristics-Miner-Netz** hochpräzise ist. |
+| **Footprint Abweichungen (Gesamtzahl)** | 5 | 132 | Das Alpha-Miner-Netz verletzt nur 5 Relationen, da es fast jedes Verhalten zulässt. Das Heuristics-Miner-Netz weist 132 Abweichungen auf seltenen Nebenpfaden auf. |
 
 ---
 
-## Detailed Findings & Process Mining Insights
+## Detaillierte Erkenntnisse & Process-Mining-Analysen
 
-### 1. The Alpha Miner Over-Generalization Paradox
-* **Why is TBR fitness near-zero (0.0082) but Footprint fitness high (0.8813)?**
-  The Alpha Miner Net is highly under-structured, containing only **2 places** for **34 transitions**. This means 30+ transitions are completely **disconnected (input-free and output-free)**.
-  In Petri Net semantics, a transition without input places is *always enabled* and can fire at any time, infinitely.
-  * **Footprint view:** Because the transitions are input-free, the model allows *any* transition to follow *any other* transition (all sequences are allowed). Thus, the footprint of the model is extremely permissive. Because it permits almost everything, the log's relationships are rarely "violated" (hence 0.8813 fitness and only 5 violations). However, this makes the model useless (precision of **0.1709**), as it allows endless behavior that never happens in reality.
-  * **TBR view:** Token-based replay tracks actual token routing from the initial marking to the final marking. Since there are almost no places or arcs in the Alpha Miner model, tokens cannot be successfully consumed or produced at the appropriate steps. This results in a massive number of missing tokens (2,394) and remaining tokens (2,424) during replay, yielding a near-zero TBR log fitness.
+### 1. Das Übergeneralisierungs-Paradoxon des Alpha Miners
+* **Warum ist die TBR-Fitness nahe Null (0,0082), aber die Footprint-Fitness hoch (0,8813)?**
+  Das Alpha-Miner-Netz ist stark unterstrukturiert und enthält lediglich **2 Stellen** für **34 Transitionen**. Dies bedeutet, dass über 30 Transitionen vollständig **isoliert sind (ohne Eingangs- und Ausgangsstellen)**.
+  In der Petri-Netz-Semantik ist eine Transition ohne Eingangsstellen *immer aktiviert* und kann somit jederzeit unendlich oft feuern.
+  * **Footprint-Perspektive:** Da die Transitionen isoliert sind, lässt das Modell zu, dass *jede* Transition auf *jede andere* Transition folgen kann (alle denkbaren Sequenzen sind erlaubt). Dadurch ist der Footprint des Modells extrem permissiv. Da nahezu jedes Verhalten erlaubt ist, werden die Relationen des Logs selten verletzt (daher die hohe Footprint-Fitness von 0,8813 und nur 5 Abweichungen). Dies macht das Modell jedoch nutzlos (Präzision von **0,1709**), da es unendlich viele Pfade erlaubt, die in der Realität niemals vorkommen.
+  * **TBR-Perspektive:** Das markenbasierte Replay (TBR) verfolgt den tatsächlichen Token-Fluss von der Anfangsmarkierung zur Endmarkierung. Da im Alpha-Miner-Modell fast keine Stellen oder Kanten existieren, können Token an den entsprechenden Schritten nicht erfolgreich konsumiert oder produziert werden. Dies führt beim Replay zu einer massiven Anzahl fehlender Token (2.394) und verbleibender Token (2.424), was in einer TBR-Log-Fitness nahe Null resultiert.
 
-### 2. Heuristics Miner Robustness
-* **Outstanding TBR Fitness (0.9889):**
-  The Heuristics Miner model achieves nearly perfect replay fitness. This demonstrates that the frequency thresholds and dependency calculations used during discovery successfully captured the main operational flows of the n8n processes, filter out noise, and establish correct routing logic.
-* **High Footprint Precision (0.8816):**
-  Unlike Alpha Miner, Heuristics Miner Net restricts execution paths to those actually observed in the event log. It does not generalize excessively, making it a highly reliable and precise process representation.
-* **Understanding the 132 Footprint Violations:**
-  Because Heuristics Miner restricts behavior to keep the model precise (high precision), it naturally introduces some violations on low-frequency, alternative paths that were omitted during discovery (to keep the model readable and avoid "spaghetti" structures). This is a standard process mining trade-off: sacrificing a tiny amount of fitness (from 1.0 to 0.9549) to gain major precision and keep the model comprehensible.
+### 2. Robustheit des Heuristics Miners
+* **Hervorragende TBR-Fitness (0,9889):**
+  Das Heuristics-Miner-Modell erzielt eine nahezu perfekte Replay-Fitness. Dies belegt, dass die bei der Entdeckung genutzten Häufigkeitsschwellenwerte und Abhängigkeitsberechnungen die Hauptströme der n8n-Prozesse erfolgreich erfasst, Rauschen gefiltert und die korrekte Routing-Logik etabliert haben.
+* **Hohe Footprint-Präzision (0,8816):**
+  Im Gegensatz zum Alpha Miner schränkt das Heuristics-Miner-Netz die Ausführungspfade auf die tatsächlich im Event-Log beobachteten Sequenzen ein. Es findet keine übermäßige Generalisierung statt, was das Modell zu einer äußerst verlässlichen und präzisen Prozessdarstellung macht.
+* **Erklärung der 132 Footprint-Abweichungen:**
+  Da der Heuristics Miner das Verhalten einschränkt, um die Präzision des Modells hoch zu halten (hohe Precision), entstehen zwangsläufig Abweichungen bei seltenen Nebenpfaden. Diese wurden bei der Modellentdeckung bewusst vernachlässigt, um ein lesbares Modell ohne "Spaghetti-Strukturen" zu erhalten. Dies entspricht einem klassischen Trade-off im Process Mining: Die minimale Reduktion der Fitness (von 1,0 auf 0,9549) wird in Kauf genommen, um eine drastisch höhere Präzision und Verständlichkeit des Modells zu gewährleisten.
 
 ---
 
-## Conclusion
-The **Heuristics Miner Petri Net** is vastly superior. It accurately and precisely models the underlying n8n process logic, as proven by its high token replay fitness (98.9%) and footprint precision (88.2%). The Alpha Miner model is unusable due to severe under-structuring (input-free transitions) causing massive token-replay errors and over-generalization.
+## Fazit
+Das **Heuristics-Miner-Petri-Netz** ist dem Alpha-Miner-Netz in jeglicher Hinsicht überlegen. Es bildet die zugrundeliegende n8n-Prozesslogik präzise und exakt ab, was durch die hohe TBR-Log-Fitness (98,9 %) und die Footprint-Präzision (88,2 %) belegt wird. Das Alpha-Miner-Modell ist aufgrund der extremen Unterstrukturierung (isolierte Transitionen) unbrauchbar, da es zu massiven Fehlern beim Token-Replay führt und das reale Verhalten durch extreme Übergeneralisierung verzerrt.
