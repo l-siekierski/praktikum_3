@@ -1,0 +1,1341 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text></text>
+    </name>
+    <page id="n0">
+      <place id="pre_Send a text message">
+        <name>
+          <text>pre_Send a text message</text>
+        </name>
+      </place>
+      <place id="pre_Webhook Events Scrapper">
+        <name>
+          <text>pre_Webhook Events Scrapper</text>
+        </name>
+      </place>
+      <place id="intplace_Send a text message3">
+        <name>
+          <text>intplace_Send a text message3</text>
+        </name>
+      </place>
+      <place id="intplace_Search files and folders">
+        <name>
+          <text>intplace_Search files and folders</text>
+        </name>
+      </place>
+      <place id="intplace_Send a text message">
+        <name>
+          <text>intplace_Send a text message</text>
+        </name>
+      </place>
+      <place id="sink0">
+        <name>
+          <text>sink0</text>
+        </name>
+      </place>
+      <place id="pre_Loop Over Items">
+        <name>
+          <text>pre_Loop Over Items</text>
+        </name>
+      </place>
+      <place id="pre_Send a message">
+        <name>
+          <text>pre_Send a message</text>
+        </name>
+      </place>
+      <place id="intplace_Events Query">
+        <name>
+          <text>intplace_Events Query</text>
+        </name>
+      </place>
+      <place id="intplace_Split Out">
+        <name>
+          <text>intplace_Split Out</text>
+        </name>
+      </place>
+      <place id="pre_Share file">
+        <name>
+          <text>pre_Share file</text>
+        </name>
+      </place>
+      <place id="intplace_Send a message1">
+        <name>
+          <text>intplace_Send a message1</text>
+        </name>
+      </place>
+      <place id="intplace_Search files and folders1">
+        <name>
+          <text>intplace_Search files and folders1</text>
+        </name>
+      </place>
+      <place id="intplace_Google Gemini Chat Model">
+        <name>
+          <text>intplace_Google Gemini Chat Model</text>
+        </name>
+      </place>
+      <place id="intplace_Download file">
+        <name>
+          <text>intplace_Download file</text>
+        </name>
+      </place>
+      <place id="intplace_Email or Telegram">
+        <name>
+          <text>intplace_Email or Telegram</text>
+        </name>
+      </place>
+      <place id="pre_Email">
+        <name>
+          <text>pre_Email</text>
+        </name>
+      </place>
+      <place id="pre_Look Up Event">
+        <name>
+          <text>pre_Look Up Event</text>
+        </name>
+      </place>
+      <place id="pre_Split Out1">
+        <name>
+          <text>pre_Split Out1</text>
+        </name>
+      </place>
+      <place id="splace_in_Search files and folders2_Share file">
+        <name>
+          <text>splace_in_Search files and folders2_Share file</text>
+        </name>
+      </place>
+      <place id="pre_Loop Over Items1">
+        <name>
+          <text>pre_Loop Over Items1</text>
+        </name>
+      </place>
+      <place id="intplace_Look Up Event">
+        <name>
+          <text>intplace_Look Up Event</text>
+        </name>
+      </place>
+      <place id="intplace_Send a text message6">
+        <name>
+          <text>intplace_Send a text message6</text>
+        </name>
+      </place>
+      <place id="pre_Trend Query">
+        <name>
+          <text>pre_Trend Query</text>
+        </name>
+      </place>
+      <place id="splace_in_Download file_Download file">
+        <name>
+          <text>splace_in_Download file_Download file</text>
+        </name>
+      </place>
+      <place id="intplace_Send a text message8">
+        <name>
+          <text>intplace_Send a text message8</text>
+        </name>
+      </place>
+      <place id="intplace_Search files and folders2">
+        <name>
+          <text>intplace_Search files and folders2</text>
+        </name>
+      </place>
+      <place id="intplace_Send a text message1">
+        <name>
+          <text>intplace_Send a text message1</text>
+        </name>
+      </place>
+      <place id="pre_Send a message1">
+        <name>
+          <text>pre_Send a message1</text>
+        </name>
+      </place>
+      <place id="splace_in_Send a message1_Download file">
+        <name>
+          <text>splace_in_Send a message1_Download file</text>
+        </name>
+      </place>
+      <place id="intplace_Share file">
+        <name>
+          <text>intplace_Share file</text>
+        </name>
+      </place>
+      <place id="pre_AI Agent">
+        <name>
+          <text>pre_AI Agent</text>
+        </name>
+      </place>
+      <place id="pre_Send a text message4">
+        <name>
+          <text>pre_Send a text message4</text>
+        </name>
+      </place>
+      <place id="pre_Search files and folders2">
+        <name>
+          <text>pre_Search files and folders2</text>
+        </name>
+      </place>
+      <place id="intplace_Webhook">
+        <name>
+          <text>intplace_Webhook</text>
+        </name>
+      </place>
+      <place id="intplace_Telegram">
+        <name>
+          <text>intplace_Telegram</text>
+        </name>
+      </place>
+      <place id="intplace_Webhook Trends Scrapper">
+        <name>
+          <text>intplace_Webhook Trends Scrapper</text>
+        </name>
+      </place>
+      <place id="pre_Send a text message3">
+        <name>
+          <text>pre_Send a text message3</text>
+        </name>
+      </place>
+      <place id="pre_Execute a SQL query1">
+        <name>
+          <text>pre_Execute a SQL query1</text>
+        </name>
+      </place>
+      <place id="pre_Search files and folders">
+        <name>
+          <text>pre_Search files and folders</text>
+        </name>
+      </place>
+      <place id="splace_in_Share file_Share file">
+        <name>
+          <text>splace_in_Share file_Share file</text>
+        </name>
+      </place>
+      <place id="pre_Send a text message1">
+        <name>
+          <text>pre_Send a text message1</text>
+        </name>
+      </place>
+      <place id="pre_Webhook">
+        <name>
+          <text>pre_Webhook</text>
+        </name>
+      </place>
+      <place id="pre_Send a text message5">
+        <name>
+          <text>pre_Send a text message5</text>
+        </name>
+      </place>
+      <place id="pre_Send a text message6">
+        <name>
+          <text>pre_Send a text message6</text>
+        </name>
+      </place>
+      <place id="pre_Email1">
+        <name>
+          <text>pre_Email1</text>
+        </name>
+      </place>
+      <place id="pre_Search files and folders1">
+        <name>
+          <text>pre_Search files and folders1</text>
+        </name>
+      </place>
+      <place id="intplace_Loop Over Items1">
+        <name>
+          <text>intplace_Loop Over Items1</text>
+        </name>
+      </place>
+      <place id="pre_Google Gemini Chat Model">
+        <name>
+          <text>pre_Google Gemini Chat Model</text>
+        </name>
+      </place>
+      <place id="pre_Send a text message8">
+        <name>
+          <text>pre_Send a text message8</text>
+        </name>
+      </place>
+      <place id="intplace_Send a text message5">
+        <name>
+          <text>intplace_Send a text message5</text>
+        </name>
+      </place>
+      <place id="intplace_Send a text message4">
+        <name>
+          <text>intplace_Send a text message4</text>
+        </name>
+      </place>
+      <place id="intplace_Split Out1">
+        <name>
+          <text>intplace_Split Out1</text>
+        </name>
+      </place>
+      <place id="pre_Email or Telegram">
+        <name>
+          <text>pre_Email or Telegram</text>
+        </name>
+      </place>
+      <place id="pre_Send a text message2">
+        <name>
+          <text>pre_Send a text message2</text>
+        </name>
+      </place>
+      <place id="pre_Split Out">
+        <name>
+          <text>pre_Split Out</text>
+        </name>
+      </place>
+      <place id="intplace_Send a text message2">
+        <name>
+          <text>intplace_Send a text message2</text>
+        </name>
+      </place>
+      <place id="intplace_Email">
+        <name>
+          <text>intplace_Email</text>
+        </name>
+      </place>
+      <place id="intplace_Webhook Events Scrapper">
+        <name>
+          <text>intplace_Webhook Events Scrapper</text>
+        </name>
+      </place>
+      <place id="splace_in_Send a text message7_Search files and folders1">
+        <name>
+          <text>splace_in_Send a text message7_Search files and folders1</text>
+        </name>
+      </place>
+      <place id="intplace_Trend Query">
+        <name>
+          <text>intplace_Trend Query</text>
+        </name>
+      </place>
+      <place id="splace_in_Send a message1_Send a message1">
+        <name>
+          <text>splace_in_Send a message1_Send a message1</text>
+        </name>
+      </place>
+      <place id="intplace_Send a text message7">
+        <name>
+          <text>intplace_Send a text message7</text>
+        </name>
+      </place>
+      <place id="intplace_Email1">
+        <name>
+          <text>intplace_Email1</text>
+        </name>
+      </place>
+      <place id="source0">
+        <name>
+          <text>source0</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="pre_Execute a SQL query">
+        <name>
+          <text>pre_Execute a SQL query</text>
+        </name>
+      </place>
+      <place id="pre_Send a text message7">
+        <name>
+          <text>pre_Send a text message7</text>
+        </name>
+      </place>
+      <place id="pre_Events Query">
+        <name>
+          <text>pre_Events Query</text>
+        </name>
+      </place>
+      <place id="intplace_AI Agent">
+        <name>
+          <text>intplace_AI Agent</text>
+        </name>
+      </place>
+      <place id="intplace_Send a message">
+        <name>
+          <text>intplace_Send a message</text>
+        </name>
+      </place>
+      <place id="intplace_Loop Over Items">
+        <name>
+          <text>intplace_Loop Over Items</text>
+        </name>
+      </place>
+      <place id="pre_Download file">
+        <name>
+          <text>pre_Download file</text>
+        </name>
+      </place>
+      <place id="pre_Telegram">
+        <name>
+          <text>pre_Telegram</text>
+        </name>
+      </place>
+      <place id="pre_Webhook Trends Scrapper">
+        <name>
+          <text>pre_Webhook Trends Scrapper</text>
+        </name>
+      </place>
+      <transition id="tau_1">
+        <name>
+          <text>tau_1</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="ace50525-16a2-4ac3-b3c2-7710f581d22b"/>
+      </transition>
+      <transition id="tau_2">
+        <name>
+          <text>tau_2</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="41438605-e98e-44fc-88d8-baab8222e5a7"/>
+      </transition>
+      <transition id="Email1_1">
+        <name>
+          <text>Email1</text>
+        </name>
+      </transition>
+      <transition id="Search_files_and_folders2_1">
+        <name>
+          <text>Search files and folders2</text>
+        </name>
+      </transition>
+      <transition id="tau_3">
+        <name>
+          <text>tau_3</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="c2d40fa7-c1a6-40d2-8feb-40c311c08727"/>
+      </transition>
+      <transition id="tau_4">
+        <name>
+          <text>tau_4</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="4ecdbe52-3534-481c-bcc4-17288c20d0a2"/>
+      </transition>
+      <transition id="tau_5">
+        <name>
+          <text>tau_5</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="12d24484-83a8-4d78-80dc-bf8b0e3ca10b"/>
+      </transition>
+      <transition id="tau_6">
+        <name>
+          <text>tau_6</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="2eb0c1bb-0d9d-4b73-8566-43a0f8699fc6"/>
+      </transition>
+      <transition id="tau_7">
+        <name>
+          <text>tau_7</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="e820af1e-b03e-4526-ba9a-9648ed1a72be"/>
+      </transition>
+      <transition id="Events_Query_1">
+        <name>
+          <text>Events Query</text>
+        </name>
+      </transition>
+      <transition id="Webhook_1">
+        <name>
+          <text>Webhook</text>
+        </name>
+      </transition>
+      <transition id="tau_8">
+        <name>
+          <text>tau_8</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="65aa1ac4-0519-4e3d-a307-be3d24bf5bb0"/>
+      </transition>
+      <transition id="tau_9">
+        <name>
+          <text>tau_9</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="ff62dbf5-d5e9-439d-bdef-d0dd866686d9"/>
+      </transition>
+      <transition id="tau_10">
+        <name>
+          <text>tau_10</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="f08a010b-fb1b-4ce7-b1fb-63ba1639ac28"/>
+      </transition>
+      <transition id="tau_11">
+        <name>
+          <text>tau_11</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="584977f0-2dea-45f8-936c-691c68ec4730"/>
+      </transition>
+      <transition id="tau_12">
+        <name>
+          <text>tau_12</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="e0fbf2de-0a34-4c6a-8e4c-3fa771bc6252"/>
+      </transition>
+      <transition id="tau_13">
+        <name>
+          <text>tau_13</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="78905577-c1f8-49e9-b5db-9a4729619c33"/>
+      </transition>
+      <transition id="tau_14">
+        <name>
+          <text>tau_14</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="cb07e7e9-d88d-44e5-8a38-b5ad4fe61c4f"/>
+      </transition>
+      <transition id="tau_15">
+        <name>
+          <text>tau_15</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="72bf52a5-9563-40d4-b876-64c1602cc61c"/>
+      </transition>
+      <transition id="tau_16">
+        <name>
+          <text>tau_16</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="08204c43-e12b-43da-a134-787041b5f50d"/>
+      </transition>
+      <transition id="Telegram_1">
+        <name>
+          <text>Telegram</text>
+        </name>
+      </transition>
+      <transition id="Split_Out_1">
+        <name>
+          <text>Split Out</text>
+        </name>
+      </transition>
+      <transition id="tau_17">
+        <name>
+          <text>tau_17</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="6f16fc58-a1d2-4b47-9949-fca4b26b66a7"/>
+      </transition>
+      <transition id="tau_18">
+        <name>
+          <text>tau_18</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="36de2243-3556-4ffc-86a1-c809aaf307d6"/>
+      </transition>
+      <transition id="tau_19">
+        <name>
+          <text>tau_19</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="e62c6958-496b-40ac-a0b4-58d0c7f0b084"/>
+      </transition>
+      <transition id="tau_20">
+        <name>
+          <text>tau_20</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="8d9b31a7-0400-4707-b7e5-33c5d0b95b34"/>
+      </transition>
+      <transition id="tau_21">
+        <name>
+          <text>tau_21</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="a8cad549-e0c6-4a7c-a139-9aae681a37b8"/>
+      </transition>
+      <transition id="Send_a_text_message5_1">
+        <name>
+          <text>Send a text message5</text>
+        </name>
+      </transition>
+      <transition id="Send_a_text_message_1">
+        <name>
+          <text>Send a text message</text>
+        </name>
+      </transition>
+      <transition id="tau_22">
+        <name>
+          <text>tau_22</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="87b68e02-11e0-4e7a-81d0-2a7a34f64949"/>
+      </transition>
+      <transition id="tau_23">
+        <name>
+          <text>tau_23</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="27cefea2-ccdb-43a8-b681-316155de1beb"/>
+      </transition>
+      <transition id="tau_24">
+        <name>
+          <text>tau_24</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="403d2885-e0ee-4861-9975-0e0e364d17d1"/>
+      </transition>
+      <transition id="tau_25">
+        <name>
+          <text>tau_25</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="479ecf50-b22a-480d-b7c5-29144de76f99"/>
+      </transition>
+      <transition id="tau_26">
+        <name>
+          <text>tau_26</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="3dbed14a-0ac1-4c62-8abd-0e8a4c2486fc"/>
+      </transition>
+      <transition id="tau_27">
+        <name>
+          <text>tau_27</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="b22c88c3-71b6-40d1-9a25-0f0cad62b89f"/>
+      </transition>
+      <transition id="Search_files_and_folders1_1">
+        <name>
+          <text>Search files and folders1</text>
+        </name>
+      </transition>
+      <transition id="Loop_Over_Items_1">
+        <name>
+          <text>Loop Over Items</text>
+        </name>
+      </transition>
+      <transition id="tau_28">
+        <name>
+          <text>tau_28</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="6fb918a6-59c6-4340-9f74-72ce8c81508c"/>
+      </transition>
+      <transition id="tau_29">
+        <name>
+          <text>tau_29</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="71e1fdea-732b-444d-bbe1-ee3a0711a28d"/>
+      </transition>
+      <transition id="tau_30">
+        <name>
+          <text>tau_30</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="7e1bf50b-4534-452a-92c1-4ea911771699"/>
+      </transition>
+      <transition id="tau_31">
+        <name>
+          <text>tau_31</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="50525ef5-889f-46c6-9305-562a9501311f"/>
+      </transition>
+      <transition id="tau_32">
+        <name>
+          <text>tau_32</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="0f449b71-19bf-48bc-9faf-18448479ef87"/>
+      </transition>
+      <transition id="tau_33">
+        <name>
+          <text>tau_33</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="7fc594c2-b657-46ce-a402-b5a17034d2a5"/>
+      </transition>
+      <transition id="Download_file_1">
+        <name>
+          <text>Download file</text>
+        </name>
+      </transition>
+      <transition id="Share_file_1">
+        <name>
+          <text>Share file</text>
+        </name>
+      </transition>
+      <transition id="tau_34">
+        <name>
+          <text>tau_34</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="abec486c-76e5-4350-8ef5-fb7087743bfa"/>
+      </transition>
+      <transition id="tau_35">
+        <name>
+          <text>tau_35</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="2a06b442-27de-45bb-87ee-65694e86d1e3"/>
+      </transition>
+      <transition id="tau_36">
+        <name>
+          <text>tau_36</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="a7d66cad-628d-4b03-8f3a-f95612d33a4b"/>
+      </transition>
+      <transition id="tau_37">
+        <name>
+          <text>tau_37</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="e29002d1-000d-4b8b-a8bb-eef03bd91ee9"/>
+      </transition>
+      <transition id="tau_38">
+        <name>
+          <text>tau_38</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="a30408f7-e9ae-4da2-a643-7d1257465dd1"/>
+      </transition>
+      <transition id="tau_39">
+        <name>
+          <text>tau_39</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="a584cfa9-1c40-4a02-b6d0-8cf786501628"/>
+      </transition>
+      <transition id="tau_40">
+        <name>
+          <text>tau_40</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="6394d5cc-0357-4c7f-b60c-5a46e9e08d8e"/>
+      </transition>
+      <transition id="tau_41">
+        <name>
+          <text>tau_41</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="9e009cde-c931-4887-9ec3-cddc387eaea8"/>
+      </transition>
+      <transition id="Google_Gemini_Chat_Model_1">
+        <name>
+          <text>Google Gemini Chat Model</text>
+        </name>
+      </transition>
+      <transition id="Look_Up_Event_1">
+        <name>
+          <text>Look Up Event</text>
+        </name>
+      </transition>
+      <transition id="tau_42">
+        <name>
+          <text>tau_42</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="24ea3116-0315-4fbe-99c3-b7e0e1e75be1"/>
+      </transition>
+      <transition id="tau_43">
+        <name>
+          <text>tau_43</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="7b8ab4cb-bf13-4d3e-8673-e36c00267b50"/>
+      </transition>
+      <transition id="Send_a_text_message4_1">
+        <name>
+          <text>Send a text message4</text>
+        </name>
+      </transition>
+      <transition id="AI_Agent_1">
+        <name>
+          <text>AI Agent</text>
+        </name>
+      </transition>
+      <transition id="Webhook_Events_Scrapper_1">
+        <name>
+          <text>Webhook Events Scrapper</text>
+        </name>
+      </transition>
+      <transition id="tau_44">
+        <name>
+          <text>tau_44</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="5432a55c-e2aa-4192-ad2b-472f1d91e1fb"/>
+      </transition>
+      <transition id="tau_45">
+        <name>
+          <text>tau_45</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="533a1e66-616c-476a-b42f-622165c29391"/>
+      </transition>
+      <transition id="tau_46">
+        <name>
+          <text>tau_46</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="2455315f-13b1-4687-b67a-513a1ced9bb4"/>
+      </transition>
+      <transition id="tau_47">
+        <name>
+          <text>tau_47</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="639f252e-a118-4a2d-be4f-9b05be3bdb9a"/>
+      </transition>
+      <transition id="Send_a_message_1">
+        <name>
+          <text>Send a message</text>
+        </name>
+      </transition>
+      <transition id="Split_Out1_1">
+        <name>
+          <text>Split Out1</text>
+        </name>
+      </transition>
+      <transition id="tau_48">
+        <name>
+          <text>tau_48</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="d3c13702-c0a2-4dfc-ab25-cdcb5cf434a0"/>
+      </transition>
+      <transition id="tau_49">
+        <name>
+          <text>tau_49</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="6eb12647-e507-47c6-a605-e46671972c2b"/>
+      </transition>
+      <transition id="tau_50">
+        <name>
+          <text>tau_50</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="6cb40093-3e30-48a6-8f8d-3d6dfbac7bd5"/>
+      </transition>
+      <transition id="tau_51">
+        <name>
+          <text>tau_51</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="d50d1882-59a2-48b1-94de-5858b25a5a4c"/>
+      </transition>
+      <transition id="tau_52">
+        <name>
+          <text>tau_52</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="73da8bb2-621a-4511-ae30-c7d215b0125a"/>
+      </transition>
+      <transition id="Email_1">
+        <name>
+          <text>Email</text>
+        </name>
+      </transition>
+      <transition id="Loop_Over_Items1_1">
+        <name>
+          <text>Loop Over Items1</text>
+        </name>
+      </transition>
+      <transition id="tau_53">
+        <name>
+          <text>tau_53</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="c98523fc-4518-41c3-acb6-2ec9ee1023af"/>
+      </transition>
+      <transition id="tau_54">
+        <name>
+          <text>tau_54</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="83520eff-57f4-419b-99d1-fa93d645669c"/>
+      </transition>
+      <transition id="tau_55">
+        <name>
+          <text>tau_55</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="b0f1af34-2580-4db8-93cf-4214d934a36c"/>
+      </transition>
+      <transition id="tau_56">
+        <name>
+          <text>tau_56</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="d88d371f-98db-4ace-af11-2f5140a09c77"/>
+      </transition>
+      <transition id="Send_a_message1_1">
+        <name>
+          <text>Send a message1</text>
+        </name>
+      </transition>
+      <transition id="Execute_a_SQL_query_1">
+        <name>
+          <text>Execute a SQL query</text>
+        </name>
+      </transition>
+      <transition id="tau_57">
+        <name>
+          <text>tau_57</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="ebf6f1e9-fb6f-4a2a-8b16-8eafb9b80288"/>
+      </transition>
+      <transition id="tau_58">
+        <name>
+          <text>tau_58</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="ff84cc89-4d84-48cc-b691-5cb34d22cd29"/>
+      </transition>
+      <transition id="tau_59">
+        <name>
+          <text>tau_59</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="4dab2692-e780-40e2-818d-e582683f4f39"/>
+      </transition>
+      <transition id="tau_60">
+        <name>
+          <text>tau_60</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="2845a9e1-d63d-40ce-bf82-d094972118cb"/>
+      </transition>
+      <transition id="tau_61">
+        <name>
+          <text>tau_61</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="191191fb-973c-4288-9f5a-9bdc4a5cc1e5"/>
+      </transition>
+      <transition id="tau_62">
+        <name>
+          <text>tau_62</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="31b97f18-6e66-401a-a4ea-1db9cafe620c"/>
+      </transition>
+      <transition id="tau_63">
+        <name>
+          <text>tau_63</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="6570c345-383b-45e3-ad83-68d5a0ecc863"/>
+      </transition>
+      <transition id="tau_64">
+        <name>
+          <text>tau_64</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="535f555b-56b8-4e8f-97b9-74ea8a12506e"/>
+      </transition>
+      <transition id="tau_65">
+        <name>
+          <text>tau_65</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="9eb48d38-d9f4-4669-adf4-a106ba4c1752"/>
+      </transition>
+      <transition id="Trend_Query_1">
+        <name>
+          <text>Trend Query</text>
+        </name>
+      </transition>
+      <transition id="Search_files_and_folders_1">
+        <name>
+          <text>Search files and folders</text>
+        </name>
+      </transition>
+      <transition id="tau_66">
+        <name>
+          <text>tau_66</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="6e2a31a0-1546-4c73-8ff9-06ba667ed8bf"/>
+      </transition>
+      <transition id="tau_67">
+        <name>
+          <text>tau_67</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="f7935994-9187-4544-a29d-e7c4e1e0c62e"/>
+      </transition>
+      <transition id="Send_a_text_message2_1">
+        <name>
+          <text>Send a text message2</text>
+        </name>
+      </transition>
+      <transition id="Send_a_text_message8_1">
+        <name>
+          <text>Send a text message8</text>
+        </name>
+      </transition>
+      <transition id="Webhook_Trends_Scrapper_1">
+        <name>
+          <text>Webhook Trends Scrapper</text>
+        </name>
+      </transition>
+      <transition id="tau_68">
+        <name>
+          <text>tau_68</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="3a70e3cc-a352-4277-865c-e5d76f1c98b5"/>
+      </transition>
+      <transition id="tau_69">
+        <name>
+          <text>tau_69</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="a8295e57-4647-41bd-abef-6d6089dd9d4f"/>
+      </transition>
+      <transition id="tau_70">
+        <name>
+          <text>tau_70</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="1390b038-a499-4b60-ad77-4345fd64728b"/>
+      </transition>
+      <transition id="tau_71">
+        <name>
+          <text>tau_71</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="beb07188-fca6-47c2-a839-612c41c371ad"/>
+      </transition>
+      <transition id="tau_72">
+        <name>
+          <text>tau_72</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="c7019ba6-fc66-48d9-8b69-5c335dfb9760"/>
+      </transition>
+      <transition id="tau_73">
+        <name>
+          <text>tau_73</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="d0c13cab-25ee-4eba-a567-1b06d01ce82e"/>
+      </transition>
+      <transition id="tau_74">
+        <name>
+          <text>tau_74</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="b8616131-eb32-4038-8ee5-356990522e03"/>
+      </transition>
+      <transition id="tau_75">
+        <name>
+          <text>tau_75</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="07152507-377f-4cd1-84c0-c948c91698af"/>
+      </transition>
+      <transition id="Email_or_Telegram_1">
+        <name>
+          <text>Email or Telegram</text>
+        </name>
+      </transition>
+      <transition id="Send_a_text_message1_1">
+        <name>
+          <text>Send a text message1</text>
+        </name>
+      </transition>
+      <transition id="tau_76">
+        <name>
+          <text>tau_76</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="1502e819-ea2f-4bfb-8d88-4b3e4cfc0c20"/>
+      </transition>
+      <transition id="tau_77">
+        <name>
+          <text>tau_77</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="f7e29c38-ee0b-4369-9fd6-5fc663062149"/>
+      </transition>
+      <transition id="Send_a_text_message3_1">
+        <name>
+          <text>Send a text message3</text>
+        </name>
+      </transition>
+      <transition id="Send_a_text_message6_1">
+        <name>
+          <text>Send a text message6</text>
+        </name>
+      </transition>
+      <transition id="tau_78">
+        <name>
+          <text>tau_78</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="aa6b6ed6-fc7b-424f-95e4-be6ec9c1a3b4"/>
+      </transition>
+      <transition id="tau_79">
+        <name>
+          <text>tau_79</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="9f866f52-7797-4016-b68f-d8818b193341"/>
+      </transition>
+      <transition id="tau_80">
+        <name>
+          <text>tau_80</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="073a055f-b227-4896-90f3-2921b29b4538"/>
+      </transition>
+      <transition id="tau_81">
+        <name>
+          <text>tau_81</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="20260fe1-4d7f-40a1-9dec-aa48be52e57a"/>
+      </transition>
+      <transition id="tau_82">
+        <name>
+          <text>tau_82</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="fa0bdf08-793f-418d-b9e8-19f1e1a66c5c"/>
+      </transition>
+      <transition id="tau_83">
+        <name>
+          <text>tau_83</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="08e6da53-4f7c-482a-9277-75bcc71bcb87"/>
+      </transition>
+      <transition id="tau_84">
+        <name>
+          <text>tau_84</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="f272d0c6-3975-428d-9480-7193ed596f1b"/>
+      </transition>
+      <transition id="Send_a_text_message7_1">
+        <name>
+          <text>Send a text message7</text>
+        </name>
+      </transition>
+      <transition id="Execute_a_SQL_query1_1">
+        <name>
+          <text>Execute a SQL query1</text>
+        </name>
+      </transition>
+      <transition id="tau_85">
+        <name>
+          <text>tau_85</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="23d2aa15-7428-40f0-bb39-809d1f2a4744"/>
+      </transition>
+      <transition id="tau_86">
+        <name>
+          <text>tau_86</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="bc0fed56-9120-4098-83ca-34e3c4dee6cb"/>
+      </transition>
+      <transition id="tau_87">
+        <name>
+          <text>tau_87</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="f99e48fc-07f0-486e-94d1-336ecbb59cf8"/>
+      </transition>
+      <arc id="2068207237120" source="pre_Send a message1" target="Send_a_message1_1"/>
+      <arc id="2068208203776" source="pre_Email or Telegram" target="Email_or_Telegram_1"/>
+      <arc id="2068215625728" source="tau_43" target="pre_Webhook"/>
+      <arc id="2068231993344" source="intplace_Email1" target="tau_35"/>
+      <arc id="2068231983120" source="pre_Split Out" target="Split_Out_1"/>
+      <arc id="2068215173136" source="Email_1" target="intplace_Email"/>
+      <arc id="2068215615504" source="tau_62" target="sink0"/>
+      <arc id="2068215844880" source="tau_54" target="pre_Send a text message7"/>
+      <arc id="2068208201760" source="splace_in_Send a text message7_Search files and folders1" target="tau_33"/>
+      <arc id="2068215623712" source="tau_18" target="pre_Send a text message7"/>
+      <arc id="2068215842864" source="tau_38" target="pre_Send a text message8"/>
+      <arc id="2068215179328" source="intplace_Telegram" target="tau_20"/>
+      <arc id="2068215621696" source="tau_17" target="pre_Send a message1"/>
+      <arc id="2068215840848" source="tau_80" target="pre_Email or Telegram"/>
+      <arc id="2068215611472" source="intplace_Search files and folders2" target="tau_46"/>
+      <arc id="2068231987296" source="intplace_AI Agent" target="tau_85"/>
+      <arc id="2068215619680" source="intplace_Split Out" target="tau_41"/>
+      <arc id="2068231985280" source="pre_Webhook Trends Scrapper" target="Webhook_Trends_Scrapper_1"/>
+      <arc id="2068215175296" source="intplace_Send a text message5" target="tau_56"/>
+      <arc id="2068215617664" source="intplace_Split Out1" target="tau_51"/>
+      <arc id="2068211345552" source="pre_Send a text message2" target="Send_a_text_message2_1"/>
+      <arc id="2068207237264" source="splace_in_Download file_Download file" target="tau_76"/>
+      <arc id="2068215625872" source="tau_25" target="pre_Send a text message8"/>
+      <arc id="2068215183504" source="Search_files_and_folders_1" target="intplace_Search files and folders"/>
+      <arc id="2068215845024" source="tau_45" target="pre_Email or Telegram"/>
+      <arc id="2068215173280" source="intplace_Email" target="tau_19"/>
+      <arc id="2068215181488" source="Events_Query_1" target="intplace_Events Query"/>
+      <arc id="2068215623856" source="tau_53" target="pre_Trend Query"/>
+      <arc id="2068215171264" source="Search_files_and_folders1_1" target="intplace_Search files and folders1"/>
+      <arc id="2068215843008" source="tau_61" target="pre_Send a text message6"/>
+      <arc id="2068215613632" source="Execute_a_SQL_query_1" target="pre_Execute a SQL query"/>
+      <arc id="2068231989456" source="Google_Gemini_Chat_Model_1" target="intplace_Google Gemini Chat Model"/>
+      <arc id="2068215621840" source="tau_48" target="pre_AI Agent"/>
+      <arc id="2068215840992" source="tau_34" target="pre_Send a text message2"/>
+      <arc id="2068215169248" source="tau_54" target="splace_in_Send a message1_Send a message1"/>
+      <arc id="2068231987440" source="tau_85" target="sink0"/>
+      <arc id="2068215177456" source="Email_or_Telegram_1" target="intplace_Email or Telegram"/>
+      <arc id="2068232509712" source="pre_Look Up Event" target="Look_Up_Event_1"/>
+      <arc id="2068207237408" source="tau_7" target="pre_Send a message1"/>
+      <arc id="2068232517920" source="pre_Loop Over Items1" target="Loop_Over_Items1_1"/>
+      <arc id="2068231993632" source="intplace_Email1" target="tau_58"/>
+      <arc id="2068215183648" source="intplace_Search files and folders" target="tau_60"/>
+      <arc id="2068215626016" source="tau_15" target="pre_Search files and folders"/>
+      <arc id="2068215845168" source="tau_29" target="pre_Send a text message2"/>
+      <arc id="2068215615792" source="Send_a_text_message6_1" target="intplace_Send a text message6"/>
+      <arc id="2068207235392" source="splace_in_Send a message1_Download file" target="tau_7"/>
+      <arc id="2068231991616" source="intplace_Trend Query" target="tau_65"/>
+      <arc id="2068215181632" source="intplace_Events Query" target="tau_71"/>
+      <arc id="2068215624000" source="tau_16" target="pre_Events Query"/>
+      <arc id="2068215171408" source="intplace_Search files and folders1" target="tau_30"/>
+      <arc id="2068215843152" source="tau_31" target="pre_Webhook"/>
+      <arc id="2068215613776" source="Execute_a_SQL_query1_1" target="pre_Execute a SQL query1"/>
+      <arc id="2068231989600" source="intplace_Google Gemini Chat Model" target="tau_48"/>
+      <arc id="2068215621984" source="tau_4" target="pre_Google Gemini Chat Model"/>
+      <arc id="2068232503664" source="pre_Send a text message4" target="Send_a_text_message4_1"/>
+      <arc id="2068215841136" source="tau_59" target="pre_Events Query"/>
+      <arc id="2068215169392" source="intplace_Send a message1" target="tau_79"/>
+      <arc id="2068215177600" source="intplace_Email or Telegram" target="tau_55"/>
+      <arc id="2068208196000" source="pre_Send a text message5" target="Send_a_text_message5_1"/>
+      <arc id="2068215175584" source="intplace_Send a text message5" target="tau_23"/>
+      <arc id="2068215617952" source="intplace_Split Out1" target="tau_13"/>
+      <arc id="2068215626160" source="tau_52" target="pre_Webhook Events Scrapper"/>
+      <arc id="2068215845312" source="tau_27" target="pre_Events Query"/>
+      <arc id="2068215173568" source="intplace_Email" target="tau_36"/>
+      <arc id="2068215615936" source="intplace_Send a text message6" target="tau_27"/>
+      <arc id="2068208202192" source="pre_Send a message" target="Send_a_message_1"/>
+      <arc id="2068215624144" source="tau_77" target="pre_Google Gemini Chat Model"/>
+      <arc id="2068215843296" source="tau_17" target="pre_Search files and folders1"/>
+      <arc id="2068215171552" source="tau_30" target="splace_in_Send a text message7_Search files and folders1"/>
+      <arc id="2068211091952" source="tau_28" target="pre_Webhook"/>
+      <arc id="2068215622128" source="tau_65" target="pre_Send a message"/>
+      <arc id="2068215179760" source="Send_a_text_message4_1" target="intplace_Send a text message4"/>
+      <arc id="2068215841280" source="tau_15" target="pre_Share file"/>
+      <arc id="2068231987728" source="Send_a_text_message2_1" target="intplace_Send a text message2"/>
+      <arc id="2068215620112" source="Webhook_Events_Scrapper_1" target="intplace_Webhook Events Scrapper"/>
+      <arc id="2068209381952" source="pre_AI Agent" target="AI_Agent_1"/>
+      <arc id="2068207237696" source="splace_in_Send a message1_Send a message1" target="tau_7"/>
+      <arc id="2068215183936" source="intplace_Search files and folders" target="tau_26"/>
+      <arc id="2068215626304" source="tau_56" target="pre_Search files and folders1"/>
+      <arc id="2068215845456" source="tau_13" target="pre_Split Out1"/>
+      <arc id="2068232516192" source="pre_Execute a SQL query" target="Execute_a_SQL_query_1"/>
+      <arc id="2068231991904" source="intplace_Trend Query" target="tau_8"/>
+      <arc id="2068215181920" source="intplace_Events Query" target="tau_39"/>
+      <arc id="2068215624288" source="tau_30" target="pre_Events Query"/>
+      <arc id="2068232505968" source="pre_Events Query" target="Events_Query_1"/>
+      <arc id="2068215843440" source="tau_70" target="pre_Send a text message4"/>
+      <arc id="2068215614064" source="Loop_Over_Items_1" target="intplace_Loop Over Items"/>
+      <arc id="2068207233664" source="pre_Download file" target="Download_file_1"/>
+      <arc id="2068231989888" source="intplace_Google Gemini Chat Model" target="tau_77"/>
+      <arc id="2068215179904" source="intplace_Send a text message4" target="tau_44"/>
+      <arc id="2068215622272" source="tau_60" target="pre_Events Query"/>
+      <arc id="2068215841424" source="tau_84" target="pre_Split Out1"/>
+      <arc id="2068231979664" source="pre_Send a text message" target="Send_a_text_message_1"/>
+      <arc id="2068215612048" source="intplace_Search files and folders2" target="tau_61"/>
+      <arc id="2068211092128" source="pre_Webhook" target="Webhook_1"/>
+      <arc id="2068231987872" source="intplace_Send a text message2" target="tau_29"/>
+      <arc id="2068215177888" source="intplace_Email or Telegram" target="tau_80"/>
+      <arc id="2068215620256" source="intplace_Webhook Events Scrapper" target="tau_87"/>
+      <arc id="2068207459008" source="tau_42" target="pre_Webhook"/>
+      <arc id="2068231985856" source="source0" target="tau_66"/>
+      <arc id="2068231994064" source="Download_file_1" target="intplace_Download file"/>
+      <arc id="2068215626448" source="tau_78" target="pre_Email1"/>
+      <arc id="2068215845600" source="intplace_Search files and folders2" target="tau_68"/>
+      <arc id="2068215173856" source="intplace_Email" target="tau_81"/>
+      <arc id="2068215616224" source="intplace_Send a text message6" target="tau_74"/>
+      <arc id="2068215624432" source="tau_36" target="pre_Send a text message3"/>
+      <arc id="2068208192256" source="pre_Email" target="Email_1"/>
+      <arc id="2068215614208" source="intplace_Loop Over Items" target="tau_83"/>
+      <arc id="2068215843584" source="tau_46" target="pre_Search files and folders"/>
+      <arc id="2068215622416" source="tau_87" target="pre_Send a text message"/>
+      <arc id="2068215841568" source="tau_5" target="pre_Send a text message3"/>
+      <arc id="2068231986000" source="tau_66" target="pre_Webhook Trends Scrapper"/>
+      <arc id="2068215618384" source="Send_a_text_message1_1" target="intplace_Send a text message1"/>
+      <arc id="2068231994208" source="intplace_Download file" target="tau_86"/>
+      <arc id="2068215184224" source="intplace_Search files and folders" target="tau_72"/>
+      <arc id="2068215626592" source="tau_6" target="pre_Send a text message4"/>
+      <arc id="2068215845744" source="intplace_Send a message1" target="tau_28"/>
+      <arc id="2068215624576" source="tau_82" target="pre_Send a message"/>
+      <arc id="2068232516480" source="pre_Execute a SQL query1" target="Execute_a_SQL_query1_1"/>
+      <arc id="2068231992192" source="intplace_Trend Query" target="tau_43"/>
+      <arc id="2068215182208" source="intplace_Events Query" target="tau_37"/>
+      <arc id="2068215843728" source="tau_12" target="pre_Loop Over Items1"/>
+      <arc id="2068231981968" source="pre_Send a text message1" target="Send_a_text_message1_1"/>
+      <arc id="2068215180192" source="intplace_Send a text message4" target="tau_6"/>
+      <arc id="2068215622560" source="tau_22" target="pre_Webhook"/>
+      <arc id="2068215841712" source="tau_10" target="pre_Send a message"/>
+      <arc id="2068207231936" source="tau_76" target="pre_Download file"/>
+      <arc id="2068231988160" source="intplace_Send a text message2" target="tau_53"/>
+      <arc id="2068215178176" source="intplace_Email or Telegram" target="tau_24"/>
+      <arc id="2068215620544" source="intplace_Webhook Events Scrapper" target="tau_52"/>
+      <arc id="2068215618528" source="intplace_Send a text message1" target="tau_63"/>
+      <arc id="2068231994352" source="tau_86" target="splace_in_Send a message1_Download file"/>
+      <arc id="2068215626736" source="tau_26" target="pre_Search files and folders"/>
+      <arc id="2068215845888" source="intplace_Search files and folders2" target="tau_47"/>
+      <arc id="2068207465488" source="source0" target="tau_42"/>
+      <arc id="2068215624720" source="tau_71" target="pre_AI Agent"/>
+      <arc id="2068215843872" source="tau_41" target="pre_Split Out"/>
+      <arc id="2068215172128" source="intplace_Search files and folders1" target="tau_9"/>
+      <arc id="2068215614496" source="intplace_Loop Over Items" target="tau_50"/>
+      <arc id="2068231990320" source="Trend_Query_1" target="intplace_Trend Query"/>
+      <arc id="2068215622704" source="tau_44" target="pre_Events Query"/>
+      <arc id="2068215170112" source="Send_a_text_message7_1" target="intplace_Send a text message7"/>
+      <arc id="2068215841856" source="tau_2" target="pre_Send a message1"/>
+      <arc id="2068207459440" source="pre_Google Gemini Chat Model" target="Google_Gemini_Chat_Model_1"/>
+      <arc id="2068231986288" source="AI_Agent_1" target="intplace_AI Agent"/>
+      <arc id="2068215176304" source="Send_a_message_1" target="intplace_Send a message"/>
+      <arc id="2068208204928" source="pre_Telegram" target="Telegram_1"/>
+      <arc id="2068215626880" source="tau_21" target="pre_Split Out"/>
+      <arc id="2068231994496" source="tau_86" target="splace_in_Download file_Download file"/>
+      <arc id="2068207228048" source="pre_Email1" target="Email1_1"/>
+      <arc id="2068215846032" source="intplace_Download file" target="tau_28"/>
+      <arc id="2068231984272" source="pre_Webhook Events Scrapper" target="Webhook_Events_Scrapper_1"/>
+      <arc id="2068215174288" source="Send_a_text_message3_1" target="intplace_Send a text message3"/>
+      <arc id="2068215616656" source="Send_a_text_message_1" target="intplace_Send a text message"/>
+      <arc id="2068232516768" source="pre_Loop Over Items" target="Loop_Over_Items_1"/>
+      <arc id="2068231992480" source="intplace_Trend Query" target="tau_67"/>
+      <arc id="2068215624864" source="tau_35" target="pre_Events Query"/>
+      <arc id="2068215844016" source="tau_9" target="pre_Search files and folders1"/>
+      <arc id="2068215614640" source="tau_50" target="sink0"/>
+      <arc id="2068232514752" source="pre_Share file" target="Share_file_1"/>
+      <arc id="2068231990464" source="intplace_Trend Query" target="tau_17"/>
+      <arc id="2068215622848" source="tau_74" target="pre_Send a text message6"/>
+      <arc id="2068207453392" source="tau_47" target="pre_Webhook"/>
+      <arc id="2068215170256" source="intplace_Send a text message7" target="tau_49"/>
+      <arc id="2068215842000" source="tau_39" target="pre_Events Query"/>
+      <arc id="2068231986432" source="intplace_AI Agent" target="tau_4"/>
+      <arc id="2068215176448" source="intplace_Send a message" target="tau_59"/>
+      <arc id="2068215618816" source="intplace_Send a text message1" target="tau_21"/>
+      <arc id="2068215627024" source="tau_24" target="pre_Telegram"/>
+      <arc id="2068215174432" source="intplace_Send a text message3" target="tau_10"/>
+      <arc id="2068215846176" source="intplace_Send a text message5" target="tau_33"/>
+      <arc id="2068215616800" source="intplace_Send a text message" target="tau_40"/>
+      <arc id="2068231992624" source="tau_67" target="sink0"/>
+      <arc id="2068215182640" source="Look_Up_Event_1" target="intplace_Look Up Event"/>
+      <arc id="2068215625008" source="tau_72" target="pre_Search files and folders2"/>
+      <arc id="2068215844160" source="tau_20" target="pre_Telegram"/>
+      <arc id="2068215172416" source="intplace_Search files and folders1" target="tau_2"/>
+      <arc id="2068215622992" source="tau_11" target="pre_Search files and folders"/>
+      <arc id="2068232514896" source="tau_3" target="pre_Share file"/>
+      <arc id="2068215180624" source="Send_a_text_message8_1" target="intplace_Send a text message8"/>
+      <arc id="2068215842144" source="tau_15" target="pre_Search files and folders2"/>
+      <arc id="2068215612768" source="Share_file_1" target="intplace_Share file"/>
+      <arc id="2068232512880" source="pre_Search files and folders2" target="Search_files_and_folders2_1"/>
+      <arc id="2068231988592" source="Webhook_1" target="intplace_Webhook"/>
+      <arc id="2068215178608" source="Telegram_1" target="intplace_Telegram"/>
+      <arc id="2068215620976" source="Webhook_Trends_Scrapper_1" target="intplace_Webhook Trends Scrapper"/>
+      <arc id="2068232510864" source="pre_Search files and folders" target="Search_files_and_folders_1"/>
+      <arc id="2068215627168" source="tau_57" target="pre_Webhook"/>
+      <arc id="2068232519072" source="pre_Send a text message6" target="Send_a_text_message6_1"/>
+      <arc id="2068215846320" source="intplace_Search files and folders" target="tau_3"/>
+      <arc id="2068215182784" source="intplace_Look Up Event" target="tau_45"/>
+      <arc id="2068215625152" source="tau_64" target="pre_Webhook Trends Scrapper"/>
+      <arc id="2068215844304" source="tau_32" target="pre_Look Up Event"/>
+      <arc id="2068215614928" source="Loop_Over_Items1_1" target="intplace_Loop Over Items1"/>
+      <arc id="2068215180768" source="intplace_Send a text message8" target="tau_11"/>
+      <arc id="2068215623136" source="tau_51" target="pre_Loop Over Items1"/>
+      <arc id="2068215170544" source="intplace_Send a text message7" target="tau_16"/>
+      <arc id="2068232504816" source="pre_Send a text message8" target="Send_a_text_message8_1"/>
+      <arc id="2068215842288" source="tau_40" target="pre_Send a text message"/>
+      <arc id="2068215612912" source="intplace_Share file" target="tau_73"/>
+      <arc id="2068232513024" source="tau_68" target="pre_Search files and folders2"/>
+      <arc id="2068231988736" source="intplace_Webhook" target="tau_78"/>
+      <arc id="2068215178752" source="intplace_Telegram" target="tau_70"/>
+      <arc id="2068215621120" source="intplace_Webhook Trends Scrapper" target="tau_14"/>
+      <arc id="2068231986720" source="intplace_AI Agent" target="tau_34"/>
+      <arc id="2068215176736" source="intplace_Send a message" target="tau_82"/>
+      <arc id="2068215627312" source="tau_8" target="pre_Trend Query"/>
+      <arc id="2068215846464" source="intplace_Share file" target="tau_47"/>
+      <arc id="2068215174720" source="intplace_Send a text message3" target="tau_5"/>
+      <arc id="2068215617088" source="intplace_Send a text message" target="tau_84"/>
+      <arc id="2068215625296" source="tau_19" target="pre_Email"/>
+      <arc id="2068231992912" source="Email1_1" target="intplace_Email1"/>
+      <arc id="2068215844448" source="tau_83" target="pre_Loop Over Items"/>
+      <arc id="2068215615072" source="intplace_Loop Over Items1" target="tau_12"/>
+      <arc id="2068208201328" source="pre_Send a text message7" target="Send_a_text_message7_1"/>
+      <arc id="2068215623280" source="tau_79" target="pre_Search files and folders1"/>
+      <arc id="2068215842432" source="tau_55" target="pre_Email"/>
+      <arc id="2068215613056" source="tau_73" target="splace_in_Share file_Share file"/>
+      <arc id="2068208199312" source="pre_Search files and folders1" target="Search_files_and_folders1_1"/>
+      <arc id="2068215619248" source="Split_Out_1" target="intplace_Split Out"/>
+      <arc id="2068231995072" source="Send_a_message1_1" target="intplace_Send a message1"/>
+      <arc id="2068215627456" source="tau_58" target="pre_Look Up Event"/>
+      <arc id="2068231984848" source="source0" target="tau_69"/>
+      <arc id="2068215846608" source="intplace_Search files and folders1" target="tau_28"/>
+      <arc id="2068215625440" source="tau_81" target="pre_Send a text message5"/>
+      <arc id="2068231993056" source="intplace_Email1" target="tau_1"/>
+      <arc id="2068215183072" source="intplace_Look Up Event" target="tau_32"/>
+      <arc id="2068215844592" source="tau_14" target="pre_Send a text message1"/>
+      <arc id="2068208201472" source="tau_33" target="pre_Send a text message7"/>
+      <arc id="2068231991040" source="intplace_Trend Query" target="tau_15"/>
+      <arc id="2068215181056" source="intplace_Send a text message8" target="tau_25"/>
+      <arc id="2068215623424" source="tau_1" target="pre_Email1"/>
+      <arc id="2068215842576" source="tau_23" target="pre_Send a text message5"/>
+      <arc id="2068231980816" source="pre_Split Out1" target="Split_Out1_1"/>
+      <arc id="2068215170832" source="intplace_Send a text message7" target="tau_18"/>
+      <arc id="2068215613200" source="tau_73" target="splace_in_Search files and folders2_Share file"/>
+      <arc id="2068232513312" source="splace_in_Search files and folders2_Share file" target="tau_68"/>
+      <arc id="2068231989024" source="intplace_Webhook" target="tau_22"/>
+      <arc id="2068215179040" source="intplace_Telegram" target="tau_38"/>
+      <arc id="2068215621408" source="intplace_Webhook Trends Scrapper" target="tau_64"/>
+      <arc id="2068207230784" source="pre_Trend Query" target="Trend_Query_1"/>
+      <arc id="2068231987008" source="intplace_AI Agent" target="tau_57"/>
+      <arc id="2068215177024" source="intplace_Send a message" target="tau_31"/>
+      <arc id="2068215619392" source="intplace_Split Out" target="tau_75"/>
+      <arc id="2068231995216" source="intplace_Send a message1" target="tau_54"/>
+      <arc id="2068215185232" source="Search_files_and_folders2_1" target="intplace_Search files and folders2"/>
+      <arc id="2068215627600" source="tau_63" target="pre_Send a text message1"/>
+      <arc id="2068215846752" source="intplace_Search files and folders1" target="tau_76"/>
+      <arc id="2068231984992" source="tau_69" target="pre_Webhook Events Scrapper"/>
+      <arc id="2068215625584" source="tau_49" target="pre_Download file"/>
+      <arc id="2068208193408" source="pre_Send a text message3" target="Send_a_text_message3_1"/>
+      <arc id="2068215844736" source="tau_37" target="pre_Trend Query"/>
+      <arc id="2068215615360" source="intplace_Loop Over Items1" target="tau_62"/>
+      <arc id="2068232515472" source="splace_in_Share file_Share file" target="tau_3"/>
+      <arc id="2068215623568" source="tau_75" target="pre_Loop Over Items"/>
+      <arc id="2068215842720" source="tau_17" target="pre_Download file"/>
+      <arc id="2068215175152" source="Send_a_text_message5_1" target="intplace_Send a text message5"/>
+      <arc id="2068215846896" source="intplace_Search files and folders" target="tau_47"/>
+      <arc id="2068215617520" source="Split_Out1_1" target="intplace_Split Out1"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink0">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

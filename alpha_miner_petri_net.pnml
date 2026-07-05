@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="alpha_classic_net_1783244569.7984304" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>alpha_classic_net_1783244569.7984304</text>
+    </name>
+    <page id="n0">
+      <place id="start">
+        <name>
+          <text>start</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="end">
+        <name>
+          <text>end</text>
+        </name>
+      </place>
+      <transition id="Execute_a_SQL_query_1">
+        <name>
+          <text>Execute a SQL query</text>
+        </name>
+      </transition>
+      <transition id="Execute_a_SQL_query1_1">
+        <name>
+          <text>Execute a SQL query1</text>
+        </name>
+      </transition>
+      <transition id="Loop_Over_Items1_1">
+        <name>
+          <text>Loop Over Items1</text>
+        </name>
+      </transition>
+      <transition id="Split_Out1_1">
+        <name>
+          <text>Split Out1</text>
+        </name>
+      </transition>
+      <transition id="Google_Gemini_Chat_Model_1">
+        <name>
+          <text>Google Gemini Chat Model</text>
+        </name>
+      </transition>
+      <transition id="Email1_1">
+        <name>
+          <text>Email1</text>
+        </name>
+      </transition>
+      <transition id="Search_files_and_folders1_1">
+        <name>
+          <text>Search files and folders1</text>
+        </name>
+      </transition>
+      <transition id="Send_a_text_message2_1">
+        <name>
+          <text>Send a text message2</text>
+        </name>
+      </transition>
+      <transition id="Send_a_text_message3_1">
+        <name>
+          <text>Send a text message3</text>
+        </name>
+      </transition>
+      <transition id="Search_files_and_folders2_1">
+        <name>
+          <text>Search files and folders2</text>
+        </name>
+      </transition>
+      <transition id="Webhook_Trends_Scrapper_1">
+        <name>
+          <text>Webhook Trends Scrapper</text>
+        </name>
+      </transition>
+      <transition id="Send_a_text_message5_1">
+        <name>
+          <text>Send a text message5</text>
+        </name>
+      </transition>
+      <transition id="Telegram_1">
+        <name>
+          <text>Telegram</text>
+        </name>
+      </transition>
+      <transition id="Send_a_text_message1_1">
+        <name>
+          <text>Send a text message1</text>
+        </name>
+      </transition>
+      <transition id="Send_a_text_message4_1">
+        <name>
+          <text>Send a text message4</text>
+        </name>
+      </transition>
+      <transition id="Download_file_1">
+        <name>
+          <text>Download file</text>
+        </name>
+      </transition>
+      <transition id="Send_a_message1_1">
+        <name>
+          <text>Send a message1</text>
+        </name>
+      </transition>
+      <transition id="Send_a_text_message7_1">
+        <name>
+          <text>Send a text message7</text>
+        </name>
+      </transition>
+      <transition id="Send_a_text_message_1">
+        <name>
+          <text>Send a text message</text>
+        </name>
+      </transition>
+      <transition id="Send_a_text_message8_1">
+        <name>
+          <text>Send a text message8</text>
+        </name>
+      </transition>
+      <transition id="Loop_Over_Items_1">
+        <name>
+          <text>Loop Over Items</text>
+        </name>
+      </transition>
+      <transition id="Look_Up_Event_1">
+        <name>
+          <text>Look Up Event</text>
+        </name>
+      </transition>
+      <transition id="Share_file_1">
+        <name>
+          <text>Share file</text>
+        </name>
+      </transition>
+      <transition id="Send_a_text_message6_1">
+        <name>
+          <text>Send a text message6</text>
+        </name>
+      </transition>
+      <transition id="Send_a_message_1">
+        <name>
+          <text>Send a message</text>
+        </name>
+      </transition>
+      <transition id="Search_files_and_folders_1">
+        <name>
+          <text>Search files and folders</text>
+        </name>
+      </transition>
+      <transition id="Trend_Query_1">
+        <name>
+          <text>Trend Query</text>
+        </name>
+      </transition>
+      <transition id="Email_1">
+        <name>
+          <text>Email</text>
+        </name>
+      </transition>
+      <transition id="Email_or_Telegram_1">
+        <name>
+          <text>Email or Telegram</text>
+        </name>
+      </transition>
+      <transition id="AI_Agent_1">
+        <name>
+          <text>AI Agent</text>
+        </name>
+      </transition>
+      <transition id="Events_Query_1">
+        <name>
+          <text>Events Query</text>
+        </name>
+      </transition>
+      <transition id="Webhook_1">
+        <name>
+          <text>Webhook</text>
+        </name>
+      </transition>
+      <transition id="Split_Out_1">
+        <name>
+          <text>Split Out</text>
+        </name>
+      </transition>
+      <transition id="Webhook_Events_Scrapper_1">
+        <name>
+          <text>Webhook Events Scrapper</text>
+        </name>
+      </transition>
+      <arc id="2068209277920" source="start" target="Webhook_Events_Scrapper_1"/>
+      <arc id="2068208760864" source="Loop_Over_Items1_1" target="end"/>
+      <arc id="2068209375424" source="Trend_Query_1" target="end"/>
+      <arc id="2068208761168" source="Loop_Over_Items_1" target="end"/>
+      <arc id="2068209290128" source="start" target="Webhook_1"/>
+      <arc id="2068209290448" source="start" target="Webhook_Trends_Scrapper_1"/>
+      <arc id="2068208458576" source="AI_Agent_1" target="end"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="end">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

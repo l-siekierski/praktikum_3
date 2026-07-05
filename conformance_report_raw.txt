@@ -1,0 +1,61 @@
+=== CONFORMANCE CHECKING RESULTS COMPARISON ===
+
+Event Log: n8n_sim_process_log.xes
+Total Events: 18198
+Total Cases (Traces): 10
+
+ALPHA MINER MODEL:
+  Places: 2, Transitions: 34, Arcs: 7
+  TBR Log Fitness: 0.008234
+  TBR Trace Fitness %: 0.00%
+  TBR Fit Traces: 0/10
+  TBR Consumed: 2414, Produced: 2444
+  TBR Missing: 2394, Remaining: 2424
+  Footprint Fitness: 0.881292
+  Footprint Precision: 0.170925
+  Footprint Total Violations: 5
+
+HEURISTICS MINER MODEL:
+  Places: 74, Transitions: 121, Arcs: 259
+  TBR Log Fitness: 0.988870
+  TBR Trace Fitness %: 30.00%
+  TBR Fit Traces: 3/10
+  TBR Consumed: 36732, Produced: 37022
+  TBR Missing: 266, Remaining: 556
+  Footprint Fitness: 0.954854
+  Footprint Precision: 0.881579
+  Footprint Total Violations: 132
+
+=== FOOTPRINT VIOLATIONS DETAIL (ALPHA MINER) ===
+  1. Relation mismatch: ('AI Agent', 'Webhook')
+  2. Relation mismatch: ('Trend Query', 'Webhook')
+  3. Relation mismatch: ('Webhook Trends Scrapper', 'Webhook Trends Scrapper')
+  4. Relation mismatch: ('Webhook Events Scrapper', 'Webhook Events Scrapper')
+  5. Relation mismatch: ('Webhook', 'Webhook')
+
+=== FOOTPRINT VIOLATIONS DETAIL (HEURISTICS MINER) ===
+  1. Relation mismatch: ('Send a text message8', 'Send a text message6')
+  2. Relation mismatch: ('Events Query', 'Send a text message5')
+  3. Relation mismatch: ('Webhook Events Scrapper', 'Send a text message')
+  4. Relation mismatch: ('Share file', 'Search files and folders2')
+  5. Relation mismatch: ('Send a text message', 'Send a text message')
+  6. Relation mismatch: ('Download file', 'Events Query')
+  7. Relation mismatch: ('Search files and folders1', 'Look Up Event')
+  8. Relation mismatch: ('Share file', 'Trend Query')
+  9. Relation mismatch: ('Webhook Events Scrapper', 'Webhook Events Scrapper')
+  10. Relation mismatch: ('Search files and folders2', 'Look Up Event')
+  11. Relation mismatch: ('Search files and folders', 'Share file')
+  12. Relation mismatch: ('Send a text message5', 'Events Query')
+  13. Relation mismatch: ('Download file', 'Email or Telegram')
+  14. Relation mismatch: ('Email or Telegram', 'Send a message1')
+  15. Relation mismatch: ('Events Query', 'Webhook')
+  16. Relation mismatch: ('Send a message', 'Send a text message3')
+  17. Relation mismatch: ('Search files and folders', 'Look Up Event')
+  18. Relation mismatch: ('Split Out1', 'Loop Over Items1')
+  19. Relation mismatch: ('Trend Query', 'Send a text message8')
+  20. Relation mismatch: ('Google Gemini Chat Model', 'Webhook')
+  21. Relation mismatch: ('Execute a SQL query', 'Loop Over Items')
+  22. Relation mismatch: ('Trend Query', 'Google Gemini Chat Model')
+  23. Relation mismatch: ('Send a text message6', 'Email or Telegram')
+  24. Relation mismatch: ('Email', 'Download file')
+  25. Relation mismatch: ('Trend Query', 'Look Up Event')
